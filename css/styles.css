@@ -1,0 +1,95 @@
+html {
+  background-color:  hsl(185, 75%, 39%);
+  position: relative;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+html::after,
+html::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+}
+
+html::after{
+  border-radius: 50%;
+  background-image: url(../images/bg-pattern-bottom.svg);
+  top: -25vh;
+  left: -20vh;
+}
+html::before{
+  background-image: url(../images/bg-pattern-top.svg);
+  bottom: -50vh;
+  right: -20vh;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card-header{
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  width: 400px;
+  background-image: url(../images/bg-pattern-card.svg);
+}
+
+.card-image{
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  width: 100px;
+  border: white 5px solid;
+  border-radius: 50%;
+}
+
+.card-content{
+  padding-top: 50px;
+  color:  hsl(229, 23%, 23%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-bottom: 16px;
+  border-bottom: solid hsl(228, 11%, 74%) 1px;
+}
+
+
+.card-age{
+  font-weight: 400;
+  margin-left: 10px;
+  color:hsl(227, 10%, 46%);
+}
+
+.card-location {
+  font-size: .7em;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  margin: 0;
+}
+
+.card-social {
+  padding-top: 16px auto auto 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  text-align: center;
+  font-size: .9em;
+}
+
+.card-socialData {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
